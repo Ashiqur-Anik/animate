@@ -1,0 +1,54 @@
+.blue {
+    --clr: #4285F4;
+}
+
+.red {
+    --clr: #DB4437;
+}
+
+.yellow {
+    --clr: #F4B400;
+}
+
+.green {
+    --clr: #0F9D58;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     overflow-x: hidden;
+}
+
+.box {
+    background-color: var(--clr);
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 25px;
+    transform: translateX(500%);
+    transition: 0.9s ease;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+
+@media only screen and (max-width: 420px) {
+    
+.box {
+   
+    width: 250px;
+    height: 200px;
+   
+}
+  }
